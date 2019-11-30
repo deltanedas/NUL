@@ -1,0 +1,10 @@
+{
+	"type": "Wall",
+	"health": 2400,
+	"size": 2,
+	"requirements": [
+		"ohnoes/24"
+	],
+	"category": "defense",
+	"research": "ohno-drill"
+}

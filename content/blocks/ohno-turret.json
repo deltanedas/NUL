@@ -1,0 +1,24 @@
+{
+	"type": "DoubleTurret",
+	"health": 300,
+	"size": 2,
+	"reload": 4,
+	"range": 30,
+	"ammo": {
+		"ohnoes": {
+			"speed": 5,
+			"damage": 50,
+			"bulletWidth": 50,
+			"bulletHeight": 9,
+			"shootEffect": "shootSmall",
+			"smokeEffect": "shootSmallSmoke",
+			"ammoMultiplier": 4
+		}
+	},
+	"requirements": [
+		"ohnoes/20",
+		"thorium/10"
+	],
+	"category": "turret",
+	"research": "ohno-drill"
+}

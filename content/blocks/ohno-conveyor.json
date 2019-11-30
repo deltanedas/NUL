@@ -1,0 +1,10 @@
+{
+	"type": "Conveyor",
+	"requirements": [
+		"copper/3",
+		"ohnoes/1"
+	],
+	"category": "distribution",
+	"speed": 0.15,
+	"research": "ohno-drill"
+}

@@ -1,0 +1,21 @@
+{
+	"type": "ImpactReactor",
+	"size": 5,
+	"itemDuration": 600,
+	"liquidCapacity": 140,
+	"powerProduction": 18000.00006,
+	"consumes": {
+		"power": 7000.0,
+		"liquid": {
+			"liquid": "slag",
+			"amount": 5
+		},
+		"items": {
+			"item": "ohnoes",
+			"amount": 5
+		}
+	},
+	"hasLiquids": true,
+	"category": "power",
+	"research": "ohno-drill"
+}

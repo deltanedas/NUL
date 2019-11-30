@@ -1,0 +1,22 @@
+{
+	"type": "Drill",
+	"size": 4,
+	"tier": 5,
+	"drillTime": 10,
+	"consumes": {
+		"power": 50,
+		"liquid": {
+			"liquid": "slag",
+			"amount": 0.5,
+			"booster": false
+		}
+	},
+	"requirements": [
+		"thorium/40",
+		"plastinium/15",
+		"silicon/50",
+		"graphite/50"
+	],
+	"category": "production",
+	"research": "laser-drill"
+}
