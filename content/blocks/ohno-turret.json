@@ -1,5 +1,7 @@
 {
 	"type": "DoubleTurret",
+	"name": "ohno",
+	"description": "ohno",
 	"health": 300,
 	"size": 2,
 	"reload": 4,
@@ -16,8 +18,8 @@
 		}
 	},
 	"requirements": [
-		"ohnoes/20",
-		"thorium/10"
+		{"item": "ohnoes", "amount": 20},
+		{"item": "thorium", "amount": 10}
 	],
 	"category": "turret",
 	"research": "ohno-drill"

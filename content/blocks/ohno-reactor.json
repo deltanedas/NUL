@@ -1,5 +1,7 @@
 {
 	"type": "ImpactReactor",
+	"name": "ohno",
+	"description": "ohno",
 	"size": 5,
 	"itemDuration": 600,
 	"liquidCapacity": 140,
@@ -15,6 +17,13 @@
 			"amount": 5
 		}
 	},
+	"requirements": [
+		{"item": "ohnoes", "amount": 250},
+		{"item": "plastanium", "amount": 70},
+		{"item": "titanium", "amount": 350},
+		{"item": "graphite", "amount": 200},
+		{"item": "lead", "amount": 600}
+	],
 	"hasLiquids": true,
 	"category": "power",
 	"research": "ohno-drill"

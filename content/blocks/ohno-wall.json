@@ -1,9 +1,11 @@
 {
 	"type": "Wall",
+	"name": "ohno",
+	"description": "ohno",
 	"health": 2400,
 	"size": 2,
 	"requirements": [
-		"ohnoes/24"
+		{"item": "ohnoes", "amount": 24}
 	],
 	"category": "defense",
 	"research": "ohno-drill"

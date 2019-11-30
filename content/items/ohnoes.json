@@ -1,6 +1,8 @@
 {
 	"type": "material",
-	"hardness": 2,
+	"name": "ohno",
+	"description": "ohno",
+	"hardness": 5,
 	"cost": 2,
 	"color": "ffffff"
 }

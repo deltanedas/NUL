@@ -1,8 +1,10 @@
 {
 	"type": "Drill",
+	"name": "ohno",
+	"description": "ohno",
 	"size": 4,
 	"tier": 5,
-	"drillTime": 10,
+	"drillTime": 150,
 	"consumes": {
 		"power": 50,
 		"liquid": {
@@ -12,10 +14,10 @@
 		}
 	},
 	"requirements": [
-		"thorium/40",
-		"plastinium/15",
-		"silicon/50",
-		"graphite/50"
+		{"item": "thorium", "amount": 40},
+		{"item": "plastanium", "amount": 15},
+		{"item": "silicon", "amount": 50},
+		{"item": "titanium", "amount": 50}
 	],
 	"category": "production",
 	"research": "laser-drill"
