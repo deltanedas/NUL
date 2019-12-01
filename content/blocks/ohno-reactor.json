@@ -3,20 +3,20 @@
 	"name": "ohno",
 	"description": "ohno",
 	"size": 5,
-	"itemDuration": 600,
-	"itemCapacity": 30,
-	"liquidCapacity": 30,
+	"itemDuration": 5,
+	"itemCapacity": 50,
+	"liquidCapacity": 50,
 	"powerProduction": 600,
 	"consumes": {
 		"power": 80,
 		"liquid": {
 			"liquid": "slag",
-			"amount": 25
+			"amount": 5
 		},
 		"items": {
 			"items": [{
 				"item": "ohnoes",
-				"amount": 25
+				"amount": 5
 			}],
 			"optional": false
 		}

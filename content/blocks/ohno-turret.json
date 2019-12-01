@@ -4,8 +4,8 @@
 	"description": "ohno",
 	"health": 300,
 	"size": 2,
-	"reload": 4,
-	"range": 30,
+	"reload": 30,
+	"range": 300,
 	"ammo": {
 		"ohnoes": {
 			"speed": 5,
