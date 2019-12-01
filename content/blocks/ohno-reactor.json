@@ -4,7 +4,8 @@
 	"description": "ohno",
 	"size": 5,
 	"itemDuration": 600,
-	"liquidCapacity": 140,
+	"itemCapacity": 30,
+	"liquidCapacity": 30,
 	"powerProduction": 600,
 	"consumes": {
 		"power": 80,
