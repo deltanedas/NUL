@@ -12,3 +12,5 @@ spinner.localizedName = "Spinny boi";
 spinner.description = "it spin :O";
 spinner.category = Category.production;
 spinner.buildVisibility = BuildVisibility.shown;
+
+System.out.println("oh no");
