@@ -4,9 +4,9 @@
 	"description": "ohno",
 	"size": 4,
 	"tier": 5,
-	"drillTime": 150,
+	"drillTime": 250,
 	"consumes": {
-		"power": 50,
+		"power": 5,
 		"liquid": {
 			"liquid": "slag",
 			"amount": 0.5,

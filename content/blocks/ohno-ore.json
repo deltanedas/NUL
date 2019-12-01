@@ -1,4 +1,5 @@
 {
 	"type": "OreBlock",
+	"name": "ohno ore",
 	"itemDrop": "ohnoes"
 }
