@@ -15,7 +15,7 @@ spinner.update = true;
 spinner.localizedName = "spinny boi";
 spinner.description = "it spin :o";
 spinner.rotate = true;
-spinner.category = Category.construction;
+spinner.category = Category.production;
 spinner.buildVisibility = BuildVisibility.shown
 
 print("Created spinny boi!")
