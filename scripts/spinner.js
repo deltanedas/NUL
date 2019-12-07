@@ -1,16 +1,21 @@
-var spinRotation = 0.0;
-var rotatorRegion = Core.atlas.find("ohno-drill-rotator");
-var SpinBlock = extend(Block, {
-	draw: function(tile){
-		spinRotation = (spinRotation + 0.001) % 1;
-		Draw.rect(rotatorRegion, tile.drawx(), tile.drawy(), spinRotation * 360);
+var rotatorRegion = Core.atlas.find("ohno-ohno-drill-rotator");
+print('Loading spinner...')
+
+const spinner = extendContent(Block, "spinner", {
+	update(tile){
+		tile.rotation(tile.rotation() + 1)
+	},
+
+	draw(tile){
+		Draw.rect(rotatorRegion, tile.drawx(), tile.drawy(), Time.time() * 2)
 	}
-})
+});
 
-var spinner = new SpinBlock("spinner");
-spinner.localizedName = "Spinny boi";
-spinner.description = "it spin :O";
-spinner.category = Category.production;
-spinner.buildVisibility = BuildVisibility.shown;
+spinner.update = true;
+spinner.localizedName = "spinny boi";
+spinner.description = "it spin :o";
+spinner.rotate = true;
+spinner.category = Category.construction;
+spinner.buildVisibility = BuildVisibility.shown
 
-System.out.println("oh no");
+print("Created spinny boi!")

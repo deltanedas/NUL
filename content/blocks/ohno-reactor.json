@@ -3,7 +3,7 @@
 	"name": "ohno",
 	"description": "ohno",
 	"size": 5,
-	"itemDuration": 40,
+	"itemDuration": 90,
 	"itemCapacity": 50,
 	"liquidCapacity": 50,
 	"powerProduction": 600,

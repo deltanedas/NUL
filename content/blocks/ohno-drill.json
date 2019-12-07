@@ -9,7 +9,7 @@
 		"power": 5,
 		"liquid": {
 			"liquid": "slag",
-			"amount": 0.5,
+			"amount": 0.1,
 			"booster": false
 		}
 	},
