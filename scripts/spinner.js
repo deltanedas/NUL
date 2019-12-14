@@ -18,7 +18,7 @@ const spinner = extendContent(Block, "spinner", {
 	},
 
 	configured(tile, player, value){
-		if(value ~= -1){
+		if(value != -1){
 			value = 1;
 		}
 
