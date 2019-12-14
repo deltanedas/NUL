@@ -1,20 +1,38 @@
-var rotatorRegion = Core.atlas.find("ohno-ohno-drill-rotator");
+var region = Core.atlas.find("error");
 print('Loading spinner...')
 
 const spinner = extendContent(Block, "spinner", {
-	update(tile){
-		tile.rotation(tile.rotation() + 1)
+	init(){
+		this.itSpin = 2; // it spin
+	},
+	buildConfiguration(tile, table){
+		table.addImageButton(Icon.arrowUpSmall, Styles.clearTransi, run(() => {
+			// Tell client to spin faster
+			tile.configure(1);
+		})).size(50);
+		table.row();
+		table.addImageButton(Icon.arrowDownSmall, Styles.clearTransi, run(() => {
+			// Tell client to spin slower
+			tile.configure(-1);
+		})).size(50);
+	},
+
+	configured(tile, player, value){
+		if(value ~= -1){
+			value = 1;
+		}
+
+		this.itSpin += value;
 	},
 
 	draw(tile){
-		Draw.rect(rotatorRegion, tile.drawx(), tile.drawy(), Time.time() * 2)
+		Draw.rect(region, tile.drawx(), tile.drawy(), Time.time() * this.itSpin)
 	}
 });
 
-spinner.update = true;
 spinner.localizedName = "spinny boi";
 spinner.description = "it spin :o";
-spinner.rotate = true;
+spinner.configurable = true;
 spinner.category = Category.production;
 spinner.buildVisibility = BuildVisibility.shown
 
