@@ -14,10 +14,10 @@
 		}
 	},
 	"requirements": [
-		{"item": "thorium", "amount": 40},
-		{"item": "plastanium", "amount": 15},
-		{"item": "silicon", "amount": 50},
-		{"item": "titanium", "amount": 50}
+		"thorium/40",
+		"plastanium/15",
+		"silicon/50",
+		"titanium/50"
 	],
 	"category": "production",
 	"research": "laser-drill"

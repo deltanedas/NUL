@@ -14,19 +14,16 @@
 			"amount": 5
 		},
 		"items": {
-			"items": [{
-				"item": "ohnoes",
-				"amount": 5
-			}],
+			"items": ["ohnoes/5"],
 			"optional": false
 		}
 	},
 	"requirements": [
-		{"item": "ohnoes", "amount": 250},
-		{"item": "plastanium", "amount": 70},
-		{"item": "titanium", "amount": 350},
-		{"item": "graphite", "amount": 200},
-		{"item": "lead", "amount": 600}
+		"ohnoes/250",
+		"plastanium/70",
+		"titanium/350",
+		"graphite/200",
+		"lead/600"
 	],
 	"hasLiquids": true,
 	"category": "power",

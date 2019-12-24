@@ -5,7 +5,7 @@
 	"health": 300,
 	"size": 2,
 	"reload": 30,
-	"range": 300,
+	"range": 175,
 	"ammo": {
 		"ohnoes": {
 			"speed": 5,
@@ -18,8 +18,8 @@
 		}
 	},
 	"requirements": [
-		{"item": "ohnoes", "amount": 20},
-		{"item": "thorium", "amount": 10}
+		"ohnoes/20",
+		"thorium/10"
 	],
 	"category": "turret",
 	"research": "ohno-drill"

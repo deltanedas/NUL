@@ -3,8 +3,8 @@
 	"name": "ohno",
 	"description": "ohno",
 	"requirements": [
-		{"item": "copper", "amount": 3},
-		{"item": "ohnoes", "amount": 1}
+		"copper/3",
+		"ohnoes/1"
 	],
 	"category": "distribution",
 	"speed": 0.15,
