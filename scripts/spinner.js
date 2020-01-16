@@ -1,9 +1,11 @@
-var region = Core.atlas.find("error");
-print('Loading spinner...')
+const region = Core.atlas.find("error");
+
+var map = {};
 
 const spinner = extendContent(Block, "spinner", {
-	init(){
-		this.itSpin = 2; // it spin
+	placed(tile){
+		const key = tile.x + "," + tile.y;
+		map[key] = 2;
 	},
 	buildConfiguration(tile, table){
 		table.addImageButton(Icon.arrowUpSmall, Styles.clearTransi, run(() => {
@@ -22,11 +24,13 @@ const spinner = extendContent(Block, "spinner", {
 			value = 1;
 		}
 
-		this.itSpin += value;
+		const key = tile.x + "," + tile.y;
+		map[key] += value;
 	},
 
 	draw(tile){
-		Draw.rect(region, tile.drawx(), tile.drawy(), Time.time() * this.itSpin)
+		const key = tile.x + "," + tile.y;
+		Draw.rect(region, tile.drawx(), tile.drawy(), Time.time() * map[key])
 	}
 });
 
@@ -35,5 +39,3 @@ spinner.description = "it spin :o";
 spinner.configurable = true;
 spinner.category = Category.production;
 spinner.buildVisibility = BuildVisibility.shown
-
-print("Created spinny boi!")
