@@ -8,12 +8,12 @@ const spinner = extendContent(Block, "spinner", {
 		map[key] = 2;
 	},
 	buildConfiguration(tile, table){
-		table.addImageButton(Icon.arrowUpSmall, Styles.clearTransi, run(() => {
+		table.addImageButton(Icon.upSmall, Styles.clearTransi, run(() => {
 			// Tell client to spin faster
 			tile.configure(1);
 		})).size(50);
 		table.row();
-		table.addImageButton(Icon.arrowDownSmall, Styles.clearTransi, run(() => {
+		table.addImageButton(Icon.downSmall, Styles.clearTransi, run(() => {
 			// Tell client to spin slower
 			tile.configure(-1);
 		})).size(50);
