@@ -33,7 +33,7 @@ const spinner = extendContent(Block, "spinner", {
 		Draw.rect(region, tile.drawx(), tile.drawy(), Time.time() * map[key])
 	}
 });
-
+spinner.solid = true;
 spinner.localizedName = "spinny boi";
 spinner.description = "it spin :o";
 spinner.configurable = true;
