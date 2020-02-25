@@ -1,13 +1,6 @@
 const region = Core.atlas.find("error");
 
-var map = {};
-
 const spinner = extendContent(Block, "spinner", {
-	placed(tile){
-		const key = tile.x + "," + tile.y;
-		map[key] = 2;
-	},
-
 	setBars(){
 		this.bars.add("health", func(entity => {
 			return new Bar("blocks.health", Pal.health, floatp(() => {
@@ -16,11 +9,9 @@ const spinner = extendContent(Block, "spinner", {
 		}));
 
 		const block = this;
-		this.bars.add("heat", func(entity => {
-			const tile = entity.tile;
-			const key = tile.x + "," + tile.y;
+		this.bars.add("speed", func(entity => {
 			return new Bar("blocks.speed", Color.royal, floatp(() => {
-				return (map[key] + 3) / 10;
+				return (entity.getSpeed() + 3) / 10;
 			})).blink(Color.red);
 		}));
 	},
@@ -42,15 +33,24 @@ const spinner = extendContent(Block, "spinner", {
 			value = 1;
 		}
 
-		const key = tile.x + "," + tile.y;
-		map[key] += value;
+		tile.entity.addSpeed(value);
 	},
 
 	draw(tile){
-		const key = tile.x + "," + tile.y;
-		Draw.rect(region, tile.drawx(), tile.drawy(), Time.time() * map[key])
+		Draw.rect(region, tile.drawx(), tile.drawy(), Time.time() * tile.entity.getSpeed())
 	}
 });
+
+spinner.entityType = prov(() => extend(TileEntity, {
+	addSpeed(speed){
+		this._speed += speed;
+	},
+	getSpeed(){
+		return this._speed;
+	},
+	_speed: 2
+}));
+
 spinner.destructible = true;
 spinner.solid = true;
 spinner.localizedName = "spinny boi";
